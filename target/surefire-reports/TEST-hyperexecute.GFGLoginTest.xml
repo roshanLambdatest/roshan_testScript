@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="hyperexecute.GFGLoginTest" time="29.542" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="webdriver.chrome.driver" value="/Users/roshank/.cache/selenium/chromedriver/mac64/134.0.6998.165/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/roshank/selenium-java/target/test-classes:/Users/roshank/selenium-java/target/classes:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-java/4.10.0/selenium-java-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-api/4.10.0/selenium-api-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.10.0/selenium-chrome-driver-4.10.0.jar:/Users/roshank/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/roshank/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/roshank/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/roshank/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/roshank/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/roshank/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/roshank/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/roshank/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/roshank/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/roshank/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.10.0/selenium-chromium-driver-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-json/4.10.0/selenium-json-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.10.0/selenium-manager-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v112/4.10.0/selenium-devtools-v112-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v113/4.10.0/selenium-devtools-v113-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v114/4.10.0/selenium-devtools-v114-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.10.0/selenium-devtools-v85-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.10.0/selenium-edge-driver-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.10.0/selenium-firefox-driver-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-http/4.10.0/selenium-http-4.10.0.jar:/Users/roshank/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.10.0/selenium-ie-driver-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.10.0/selenium-remote-driver-4.10.0.jar:/Users/roshank/.m2/repository/io/netty/netty-buffer/4.1.92.Final/netty-buffer-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-codec-http/4.1.92.Final/netty-codec-http-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-codec/4.1.92.Final/netty-codec-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-handler/4.1.92.Final/netty-handler-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-common/4.1.92.Final/netty-common-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.92.Final/netty-transport-classes-epoll-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.92.Final/netty-transport-classes-kqueue-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-native-epoll/4.1.92.Final/netty-transport-native-epoll-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.92.Final/netty-transport-native-kqueue-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.92.Final/netty-transport-native-unix-common-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport/4.1.92.Final/netty-transport-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-resolver/4.1.92.Final/netty-resolver-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-api/1.26.0/opentelemetry-api-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-context/1.26.0/opentelemetry-context-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.26.0/opentelemetry-exporter-logging-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.26.0/opentelemetry-sdk-metrics-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.26.0-alpha/opentelemetry-extension-incubator-1.26.0-alpha.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.26.0-alpha/opentelemetry-sdk-logs-1.26.0-alpha.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.26.0-alpha/opentelemetry-api-logs-1.26.0-alpha.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.26.0-alpha/opentelemetry-api-events-1.26.0-alpha.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.26.0/opentelemetry-sdk-common-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.26.0/opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.26.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.26.0/opentelemetry-sdk-trace-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.26.0/opentelemetry-sdk-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.26.0-alpha/opentelemetry-semconv-1.26.0-alpha.jar:/Users/roshank/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/roshank/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/roshank/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/roshank/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/roshank/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/roshank/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/roshank/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.10.0/selenium-safari-driver-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-support/4.10.0/selenium-support-4.10.0.jar:/Users/roshank/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/Users/roshank/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/roshank/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/roshank/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/roshank/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/roshank/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/roshank/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/roshank/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/roshank/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/roshank/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/roshank/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/roshank/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/roshank/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/roshank/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/roshank/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/roshank/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/roshank/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/roshank/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/roshank/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.3/junit-jupiter-5.9.3.jar:/Users/roshank/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/Users/roshank/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/roshank/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar:/Users/roshank/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/roshank/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar:/Users/roshank/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/Users/roshank/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/Users/roshank/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/roshank/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/roshank/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/roshank/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/roshank/.m2/repository/ch/qos/logback/logback-classic/1.4.5/logback-classic-1.4.5.jar:/Users/roshank/.m2/repository/ch/qos/logback/logback-core/1.4.5/logback-core-1.4.5.jar:/Users/roshank/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/roshank/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/Users/roshank/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/Users/roshank/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.1/jackson-core-2.14.1.jar:/Users/roshank/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/roshank/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/roshank/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/roshank/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/roshank/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/roshank/.m2/repository/io/qameta/allure/allure-junit5/2.21.0/allure-junit5-2.21.0.jar:/Users/roshank/.m2/repository/io/qameta/allure/allure-junit-platform/2.21.0/allure-junit-platform-2.21.0.jar:/Users/roshank/.m2/repository/io/qameta/allure/allure-java-commons/2.21.0/allure-java-commons-2.21.0.jar:/Users/roshank/.m2/repository/io/qameta/allure/allure-model/2.21.0/allure-model-2.21.0.jar:/Users/roshank/.m2/repository/io/qameta/allure/allure-test-filter/2.21.0/allure-test-filter-2.21.0.jar:/Users/roshank/.m2/repository/org/junit/platform/junit-platform-launcher/1.8.2/junit-platform-launcher-1.8.2.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/roshank/selenium-java/target/surefire/surefirebooter-20250327145757509_3.jar /Users/roshank/selenium-java/target/surefire 2025-03-27T14-57-57_228-jvmRun1 surefire-20250327145757509_1tmp surefire_0-20250327145757509_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/roshank/selenium-java/target/test-classes:/Users/roshank/selenium-java/target/classes:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-java/4.10.0/selenium-java-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-api/4.10.0/selenium-api-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.10.0/selenium-chrome-driver-4.10.0.jar:/Users/roshank/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/roshank/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/roshank/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/roshank/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/roshank/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/roshank/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/roshank/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/roshank/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/roshank/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/roshank/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.10.0/selenium-chromium-driver-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-json/4.10.0/selenium-json-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.10.0/selenium-manager-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v112/4.10.0/selenium-devtools-v112-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v113/4.10.0/selenium-devtools-v113-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v114/4.10.0/selenium-devtools-v114-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.10.0/selenium-devtools-v85-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.10.0/selenium-edge-driver-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.10.0/selenium-firefox-driver-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-http/4.10.0/selenium-http-4.10.0.jar:/Users/roshank/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.10.0/selenium-ie-driver-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.10.0/selenium-remote-driver-4.10.0.jar:/Users/roshank/.m2/repository/io/netty/netty-buffer/4.1.92.Final/netty-buffer-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-codec-http/4.1.92.Final/netty-codec-http-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-codec/4.1.92.Final/netty-codec-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-handler/4.1.92.Final/netty-handler-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-common/4.1.92.Final/netty-common-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.92.Final/netty-transport-classes-epoll-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.92.Final/netty-transport-classes-kqueue-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-native-epoll/4.1.92.Final/netty-transport-native-epoll-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.92.Final/netty-transport-native-kqueue-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.92.Final/netty-transport-native-unix-common-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport/4.1.92.Final/netty-transport-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-resolver/4.1.92.Final/netty-resolver-4.1.92.Final.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-api/1.26.0/opentelemetry-api-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-context/1.26.0/opentelemetry-context-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.26.0/opentelemetry-exporter-logging-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.26.0/opentelemetry-sdk-metrics-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.26.0-alpha/opentelemetry-extension-incubator-1.26.0-alpha.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.26.0-alpha/opentelemetry-sdk-logs-1.26.0-alpha.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.26.0-alpha/opentelemetry-api-logs-1.26.0-alpha.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.26.0-alpha/opentelemetry-api-events-1.26.0-alpha.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.26.0/opentelemetry-sdk-common-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.26.0/opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.26.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.26.0/opentelemetry-sdk-trace-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.26.0/opentelemetry-sdk-1.26.0.jar:/Users/roshank/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.26.0-alpha/opentelemetry-semconv-1.26.0-alpha.jar:/Users/roshank/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/roshank/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/roshank/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/roshank/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/roshank/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/roshank/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/roshank/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/roshank/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.10.0/selenium-safari-driver-4.10.0.jar:/Users/roshank/.m2/repository/org/seleniumhq/selenium/selenium-support/4.10.0/selenium-support-4.10.0.jar:/Users/roshank/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/Users/roshank/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/roshank/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/roshank/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/roshank/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/roshank/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/roshank/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/roshank/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/roshank/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/roshank/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/roshank/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/roshank/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/roshank/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/roshank/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/roshank/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/roshank/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/roshank/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/roshank/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/roshank/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.3/junit-jupiter-5.9.3.jar:/Users/roshank/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/Users/roshank/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/roshank/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar:/Users/roshank/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/roshank/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar:/Users/roshank/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/Users/roshank/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/Users/roshank/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/roshank/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/roshank/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/roshank/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/roshank/.m2/repository/ch/qos/logback/logback-classic/1.4.5/logback-classic-1.4.5.jar:/Users/roshank/.m2/repository/ch/qos/logback/logback-core/1.4.5/logback-core-1.4.5.jar:/Users/roshank/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/roshank/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/Users/roshank/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/Users/roshank/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.1/jackson-core-2.14.1.jar:/Users/roshank/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/roshank/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/roshank/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/roshank/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/roshank/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/roshank/.m2/repository/io/qameta/allure/allure-junit5/2.21.0/allure-junit5-2.21.0.jar:/Users/roshank/.m2/repository/io/qameta/allure/allure-junit-platform/2.21.0/allure-junit-platform-2.21.0.jar:/Users/roshank/.m2/repository/io/qameta/allure/allure-java-commons/2.21.0/allure-java-commons-2.21.0.jar:/Users/roshank/.m2/repository/io/qameta/allure/allure-model/2.21.0/allure-model-2.21.0.jar:/Users/roshank/.m2/repository/io/qameta/allure/allure-test-filter/2.21.0/allure-test-filter-2.21.0.jar:/Users/roshank/.m2/repository/org/junit/platform/junit-platform-launcher/1.8.2/junit-platform-launcher-1.8.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/roshank"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/roshank/selenium-java"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/roshank/selenium-java/target/surefire/surefirebooter-20250327145757509_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23.0.2"/>
+    <property name="user.name" value="roshank"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="otel.metrics.exporter" value="none"/>
+    <property name="os.version" value="15.3.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="otel.traces.exporter" value="none"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/roshank/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/1l/w5f8t4k558jbzmx3h__fbxw40000gq/T/"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="/Users/roshank/selenium-java"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/roshank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="23.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testLogin" classname="hyperexecute.GFGLoginTest" time="24.465">
+    <system-out><![CDATA[14:58:03.622 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.5.3
+14:58:04.103 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=134 in cache (valid until 15:56:28 27/03/2025 IST)
+14:58:04.104 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome134=134.0.6998.165 in cache (valid until 17:58:04 27/03/2025 IST)
+14:58:04.105 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.165 (resolved driver for Chrome 134)
+14:58:04.130 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 134.0.6998.165 found in cache
+14:58:04.131 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/roshank/.cache/selenium/chromedriver/mac64/134.0.6998.165/chromedriver
+14:58:04.338 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+14:58:04.345 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+14:58:04.346 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+14:58:04.354 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@344b8190
+14:58:04.382 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+14:58:04.382 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 23
+14:58:04.384 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+14:58:04.385 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+14:58:04.386 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+14:58:04.386 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+14:58:04.387 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+14:58:04.388 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+14:58:04.390 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @6d3a388c
+14:58:04.391 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+14:58:04.392 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+14:58:04.393 [main] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 4294967296 bytes (maybe)
+14:58:04.394 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/1l/w5f8t4k558jbzmx3h__fbxw40000gq/T (java.io.tmpdir)
+14:58:04.394 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+14:58:04.394 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: MacOS
+14:58:04.396 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+14:58:04.396 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+14:58:04.402 [main] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+14:58:04.402 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+14:58:04.410 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+14:58:04.441 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+14:58:04.441 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+14:58:04.511 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+14:58:04.512 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+14:58:04.528 [main] DEBUG io.netty.util.concurrent.GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+14:58:04.549 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+14:58:04.563 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+14:58:04.563 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+14:58:04.621 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
+14:58:04.621 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
+14:58:04.621 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+14:58:04.621 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+14:58:04.621 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+14:58:04.621 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+14:58:04.622 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+14:58:04.622 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+14:58:04.622 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+14:58:04.622 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+14:58:04.622 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+14:58:04.622 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+14:58:04.691 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+14:58:04.692 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+14:58:04.692 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+14:58:05.035 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 37194 (auto-detected)
+14:58:05.036 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+14:58:05.037 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+14:58:05.044 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtilInitializations - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+14:58:05.045 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+14:58:05.046 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+14:58:05.094 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+14:58:05.094 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+14:58:05.094 [AsyncHttpClient-1-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5b2dbec1
+14:58:05.175 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+14:58:05.176 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+14:58:05.176 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+14:58:05.176 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+14:58:05.176 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+14:58:05.420 [AsyncHttpClient-1-2] DEBUG io.netty.handler.ssl.util.InsecureTrustManagerFactory - Accepting a server certificate: CN=lambdatest.com
+14:58:05.542 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]' for 'POST' to '/wd/hub/session'
+14:58:05.710 [AsyncHttpClient-1-2] DEBUG io.netty.handler.ssl.SslHandler - [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443] HANDSHAKEN: protocol:TLSv1.2 cipher suite:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+14:58:17.077 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+14:58:17.078 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session HTTP/1.1
+User-Agent: selenium/4.10.0 (java mac)
+traceparent: 00-cd52b9575808eff7bd9a623dd0a1fba9-117e068b019ee65f-01
+Content-Length: 351
+Content-Type: application/json; charset=utf-8
+host: hub.lambdatest.com
+authorization: Basic cm9zaGFuazpMVF8wdXVaNmxZbjhzeFE1NWFHWWlYTERHM2x3YWtmRXNjY3h1V0JCZm00RWVNYjRXbQ==
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Date: Thu, 27 Mar 2025 09:28:17 GMT
+Content-Type: application/json
+Content-Length: 855
+Connection: keep-alive
+Vary: Accept-Encoding
+
+14:58:17.098 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: https://hub.lambdatest.com:443 for channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]
+14:58:17.215 [Forwarding setTimeout on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]' for 'POST' to 'https://roshank:LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm@hub.lambdatest.com/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/timeouts'
+14:58:17.216 [Forwarding setTimeout on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443] for POST '/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/timeouts'
+14:58:17.520 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/timeouts HTTP/1.1
+User-Agent: selenium/4.10.0 (java mac)
+traceparent: 00-f5e4ab0588d39ccb816161c7f8699101-ca11182362ede7f1-01
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: hub.lambdatest.com
+authorization: Basic cm9zaGFuazpMVF8wdXVaNmxZbjhzeFE1NWFHWWlYTERHM2x3YWtmRXNjY3h1V0JCZm00RWVNYjRXbQ==
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Date: Thu, 27 Mar 2025 09:28:17 GMT
+Content-Type: application/json
+Content-Length: 14
+Connection: keep-alive
+
+14:58:17.521 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: https://hub.lambdatest.com:443 for channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]
+14:58:17.532 [Forwarding get on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]' for 'POST' to 'https://roshank:LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm@hub.lambdatest.com/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/url'
+14:58:17.532 [Forwarding get on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443] for POST '/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/url'
+14:58:19.920 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/url HTTP/1.1
+User-Agent: selenium/4.10.0 (java mac)
+traceparent: 00-84ca7684546123c2dc296694421c1c77-abe8753777a2e6d0-01
+Content-Length: 61
+Content-Type: application/json; charset=utf-8
+host: hub.lambdatest.com
+authorization: Basic cm9zaGFuazpMVF8wdXVaNmxZbjhzeFE1NWFHWWlYTERHM2x3YWtmRXNjY3h1V0JCZm00RWVNYjRXbQ==
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Date: Thu, 27 Mar 2025 09:28:20 GMT
+Content-Type: application/json
+Content-Length: 14
+Connection: keep-alive
+
+14:58:19.921 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: https://hub.lambdatest.com:443 for channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]
+14:58:19.928 [Forwarding findElement on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]' for 'POST' to 'https://roshank:LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm@hub.lambdatest.com/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element'
+14:58:19.928 [Forwarding findElement on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443] for POST '/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element'
+14:58:20.232 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element HTTP/1.1
+User-Agent: selenium/4.10.0 (java mac)
+traceparent: 00-fca3edac73dee440b67036e593cc8da7-8e6f01986345d35f-01
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: hub.lambdatest.com
+authorization: Basic cm9zaGFuazpMVF8wdXVaNmxZbjhzeFE1NWFHWWlYTERHM2x3YWtmRXNjY3h1V0JCZm00RWVNYjRXbQ==
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Date: Thu, 27 Mar 2025 09:28:20 GMT
+Content-Type: application/json
+Content-Length: 126
+Connection: keep-alive
+Vary: Accept-Encoding
+
+14:58:20.233 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: https://hub.lambdatest.com:443 for channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]
+14:58:20.246 [Forwarding sendKeysToElement on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]' for 'POST' to 'https://roshank:LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm@hub.lambdatest.com/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element/f.2AD50A69214484BF0432F538620AB323.d.1A8DD3557536D1699EAA5575D11BC62E.e.29/value'
+14:58:20.247 [Forwarding sendKeysToElement on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443] for POST '/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element/f.2AD50A69214484BF0432F538620AB323.d.1A8DD3557536D1699EAA5575D11BC62E.e.29/value'
+14:58:20.679 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element/f.2AD50A69214484BF0432F538620AB323.d.1A8DD3557536D1699EAA5575D11BC62E.e.29/value HTTP/1.1
+User-Agent: selenium/4.10.0 (java mac)
+traceparent: 00-2d10202f9a6ee059286f3ccafa043efe-46444ae79d9304a3-01
+Content-Length: 379
+Content-Type: application/json; charset=utf-8
+host: hub.lambdatest.com
+authorization: Basic cm9zaGFuazpMVF8wdXVaNmxZbjhzeFE1NWFHWWlYTERHM2x3YWtmRXNjY3h1V0JCZm00RWVNYjRXbQ==
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Date: Thu, 27 Mar 2025 09:28:20 GMT
+Content-Type: application/json
+Content-Length: 14
+Connection: keep-alive
+
+14:58:20.680 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: https://hub.lambdatest.com:443 for channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]
+14:58:20.684 [Forwarding findElement on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]' for 'POST' to 'https://roshank:LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm@hub.lambdatest.com/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element'
+14:58:20.684 [Forwarding findElement on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443] for POST '/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element'
+14:58:21.050 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element HTTP/1.1
+User-Agent: selenium/4.10.0 (java mac)
+traceparent: 00-9d837ca4df8c656ac5e1a88ea0a159c7-5e15d401421571fa-01
+Content-Length: 53
+Content-Type: application/json; charset=utf-8
+host: hub.lambdatest.com
+authorization: Basic cm9zaGFuazpMVF8wdXVaNmxZbjhzeFE1NWFHWWlYTERHM2x3YWtmRXNjY3h1V0JCZm00RWVNYjRXbQ==
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Date: Thu, 27 Mar 2025 09:28:21 GMT
+Content-Type: application/json
+Content-Length: 126
+Connection: keep-alive
+Vary: Accept-Encoding
+
+14:58:21.051 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: https://hub.lambdatest.com:443 for channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]
+14:58:21.056 [Forwarding sendKeysToElement on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]' for 'POST' to 'https://roshank:LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm@hub.lambdatest.com/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element/f.2AD50A69214484BF0432F538620AB323.d.1A8DD3557536D1699EAA5575D11BC62E.e.30/value'
+14:58:21.056 [Forwarding sendKeysToElement on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443] for POST '/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element/f.2AD50A69214484BF0432F538620AB323.d.1A8DD3557536D1699EAA5575D11BC62E.e.30/value'
+14:58:21.351 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element/f.2AD50A69214484BF0432F538620AB323.d.1A8DD3557536D1699EAA5575D11BC62E.e.30/value HTTP/1.1
+User-Agent: selenium/4.10.0 (java mac)
+traceparent: 00-57393f5a74b5b7dcf0026ffa64d90ff6-ca736f8067431b0b-01
+Content-Length: 249
+Content-Type: application/json; charset=utf-8
+host: hub.lambdatest.com
+authorization: Basic cm9zaGFuazpMVF8wdXVaNmxZbjhzeFE1NWFHWWlYTERHM2x3YWtmRXNjY3h1V0JCZm00RWVNYjRXbQ==
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Date: Thu, 27 Mar 2025 09:28:21 GMT
+Content-Type: application/json
+Content-Length: 14
+Connection: keep-alive
+
+14:58:21.352 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: https://hub.lambdatest.com:443 for channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]
+14:58:21.356 [Forwarding findElement on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]' for 'POST' to 'https://roshank:LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm@hub.lambdatest.com/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element'
+14:58:21.356 [Forwarding findElement on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443] for POST '/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element'
+14:58:21.551 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element HTTP/1.1
+User-Agent: selenium/4.10.0 (java mac)
+traceparent: 00-6c12d4929e7ab00764acbe2711376355-d451d6dd8a267a1a-01
+Content-Length: 73
+Content-Type: application/json; charset=utf-8
+host: hub.lambdatest.com
+authorization: Basic cm9zaGFuazpMVF8wdXVaNmxZbjhzeFE1NWFHWWlYTERHM2x3YWtmRXNjY3h1V0JCZm00RWVNYjRXbQ==
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Date: Thu, 27 Mar 2025 09:28:21 GMT
+Content-Type: application/json
+Content-Length: 125
+Connection: keep-alive
+Vary: Accept-Encoding
+
+14:58:21.551 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: https://hub.lambdatest.com:443 for channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]
+14:58:21.554 [Forwarding clickElement on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]' for 'POST' to 'https://roshank:LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm@hub.lambdatest.com/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element/f.2AD50A69214484BF0432F538620AB323.d.1A8DD3557536D1699EAA5575D11BC62E.e.3/click'
+14:58:21.554 [Forwarding clickElement on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443] for POST '/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element/f.2AD50A69214484BF0432F538620AB323.d.1A8DD3557536D1699EAA5575D11BC62E.e.3/click'
+14:58:21.848 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/element/f.2AD50A69214484BF0432F538620AB323.d.1A8DD3557536D1699EAA5575D11BC62E.e.3/click HTTP/1.1
+User-Agent: selenium/4.10.0 (java mac)
+traceparent: 00-ca69828b37473ff28cc45dc910637f43-082ab629d76a8c3a-01
+Content-Length: 87
+Content-Type: application/json; charset=utf-8
+host: hub.lambdatest.com
+authorization: Basic cm9zaGFuazpMVF8wdXVaNmxZbjhzeFE1NWFHWWlYTERHM2x3YWtmRXNjY3h1V0JCZm00RWVNYjRXbQ==
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Date: Thu, 27 Mar 2025 09:28:21 GMT
+Content-Type: application/json
+Content-Length: 14
+Connection: keep-alive
+
+14:58:21.849 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: https://hub.lambdatest.com:443 for channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]
+14:58:22.117 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : https://hub.lambdatest.com:443 : 1
+14:58:23.215 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : https://hub.lambdatest.com:443 : 1
+14:58:24.318 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : https://hub.lambdatest.com:443 : 1
+14:58:25.417 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : https://hub.lambdatest.com:443 : 1
+14:58:26.517 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : https://hub.lambdatest.com:443 : 1
+14:58:26.869 [Forwarding getTitle on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]' for 'GET' to 'https://roshank:LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm@hub.lambdatest.com/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/title'
+14:58:26.870 [Forwarding getTitle on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443] for GET '/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/title'
+14:58:27.639 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04/title HTTP/1.1
+User-Agent: selenium/4.10.0 (java mac)
+Cache-Control: no-cache
+traceparent: 00-856ce676dd82cc0aa9f2bdc9bbbc19e3-db4a6455ae981d20-01
+Content-Type: application/json; charset=utf-8
+host: hub.lambdatest.com
+authorization: Basic cm9zaGFuazpMVF8wdXVaNmxZbjhzeFE1NWFHWWlYTERHM2x3YWtmRXNjY3h1V0JCZm00RWVNYjRXbQ==
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Date: Thu, 27 Mar 2025 09:28:27 GMT
+Content-Type: application/json
+Content-Length: 108
+Connection: keep-alive
+Vary: Accept-Encoding
+
+14:58:27.639 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: https://hub.lambdatest.com:443 for channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]
+Login Successful on LambdaTest!
+14:58:27.650 [Forwarding quit on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]' for 'DELETE' to 'https://roshank:LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm@hub.lambdatest.com/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04'
+14:58:27.650 [Forwarding quit on session 4dbb9b07b63a5082da61b2245a5acc04 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443] for DELETE '/wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04'
+14:58:27.947 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /wd/hub/session/4dbb9b07b63a5082da61b2245a5acc04 HTTP/1.1
+User-Agent: selenium/4.10.0 (java mac)
+traceparent: 00-070730cb3ec41e6ec5273a284eccaf28-e9739460a5dcbd7e-01
+Content-Type: application/json; charset=utf-8
+host: hub.lambdatest.com
+authorization: Basic cm9zaGFuazpMVF8wdXVaNmxZbjhzeFE1NWFHWWlYTERHM2x3YWtmRXNjY3h1V0JCZm00RWVNYjRXbQ==
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Date: Thu, 27 Mar 2025 09:28:28 GMT
+Content-Type: application/json
+Content-Length: 14
+Connection: keep-alive
+
+14:58:27.948 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: https://hub.lambdatest.com:443 for channel [id: 0x166685d7, L:/192.168.100.119:51172 - R:hub.lambdatest.com/43.204.87.215:443]
+]]></system-out>
+    <system-err><![CDATA[Mar 27, 2025 2:58:04 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFO: Using OpenTelemetry for tracing
+]]></system-err>
+  </testcase>
+</testsuite>

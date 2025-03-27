@@ -1,0 +1,35 @@
+version: 0.1
+runson: mac
+
+autosplit: true
+concurrency: 3
+
+pre:
+  - mvn clean install -U
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: grep 'public class' src/test/java/hyperexecute/*.java | awk '{print$3}'
+  # grep 'public class' src/test/java/hyperexecute/*.java | awk '{print $3}' | cut -d'{' -f1
+  #grep 'public class' src/test/java/hyperexecute/*.java | awk '{print$3}'
+
+
+
+runtime:
+    language: java
+    version: "22"
+
+
+testRunnerCommand: mvn -Dplatname=mac -Dmaven.repo.local=m2_cache_dir -Dtest=$test test site surefire-report:report
+
+
+retryOnFailure: true
+maxRetries: 1
+
+jobLabel: 
+  - selenium-junit
+  - mac
+  - autosplit
+
+

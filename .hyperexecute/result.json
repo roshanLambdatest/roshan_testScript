@@ -1,0 +1,110 @@
+{
+    "id": "43a71706-cb15-4086-9059-343405b3f075",
+    "created_at": "2025-03-27T09:48:48Z",
+    "update_at": "2025-03-27T09:49:39Z",
+    "global_timeout": 90,
+    "tunnel_name": "",
+    "start_time": "2025-03-27T09:49:21Z",
+    "end_time": "2025-03-27T09:49:39Z",
+    "summary": {
+        "total_time": 18000000000,
+        "execution_time": 18000000000,
+        "total_tasks": 3,
+        "build_time_consumed": 38000000000,
+        "jobTestExecutionTime": "0s",
+        "failed_tasks": 3,
+        "total_stage_info": {
+            "prerun": {
+                "StageFailedPercent": 100,
+                "StagePassPercent": 0,
+                "TotalStage": 3
+            }
+        },
+        "status": "failed",
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=43a71706-cb15-4086-9059-343405b3f075"
+    },
+    "tasks": [
+        {
+            "id": "HYPM-32518-1743068960344794483NCY",
+            "os": "mac",
+            "status": "failed",
+            "remark": "step 1 - exit status 1",
+            "debug": false,
+            "created_at": "2025-03-27T09:49:20Z",
+            "update_at": "2025-03-27T09:49:32Z",
+            "start_time": "2025-03-27T09:49:21Z",
+            "end_time": "2025-03-27T09:49:32Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "109ba633-2dbb-47cc-95f2-054c8a519244",
+                    "type": "prerun",
+                    "status": "failed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2025-03-27T09:49:28Z",
+                    "started_at": "2025-03-27T09:49:28Z",
+                    "updated_at": "2025-03-27T09:49:32Z",
+                    "order": 2,
+                    "task_number": 1
+                }
+            ]
+        },
+        {
+            "id": "HYPM-32518-1743068960395138710KCH",
+            "os": "mac",
+            "status": "failed",
+            "remark": "step 1 - exit status 1",
+            "debug": false,
+            "created_at": "2025-03-27T09:49:20Z",
+            "update_at": "2025-03-27T09:49:39Z",
+            "start_time": "2025-03-27T09:49:22Z",
+            "end_time": "2025-03-27T09:49:39Z",
+            "group_number": 2,
+            "stages": [
+                {
+                    "id": "1b3470a7-a5c3-4b8b-84aa-f971b657bb7f",
+                    "type": "prerun",
+                    "status": "failed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2025-03-27T09:49:32Z",
+                    "started_at": "2025-03-27T09:49:33Z",
+                    "updated_at": "2025-03-27T09:49:39Z",
+                    "order": 2,
+                    "task_number": 2
+                }
+            ]
+        },
+        {
+            "id": "HYPM-32518-1743068960432857461OEY",
+            "os": "mac",
+            "status": "failed",
+            "remark": "step 1 - exit status 1",
+            "debug": false,
+            "created_at": "2025-03-27T09:49:20Z",
+            "update_at": "2025-03-27T09:49:31Z",
+            "start_time": "2025-03-27T09:49:21Z",
+            "end_time": "2025-03-27T09:49:31Z",
+            "group_number": 3,
+            "stages": [
+                {
+                    "id": "2f4a60b2-455a-4fa2-a564-aeda4ba6fbb7",
+                    "type": "prerun",
+                    "status": "failed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2025-03-27T09:49:27Z",
+                    "started_at": "2025-03-27T09:49:27Z",
+                    "updated_at": "2025-03-27T09:49:31Z",
+                    "order": 2,
+                    "task_number": 3
+                }
+            ]
+        }
+    ],
+    "test_ids": null
+}
