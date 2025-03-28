@@ -7,7 +7,7 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
+        stage('Setup') {
             steps {
                 git branch: 'main', 
                 url: 'https://github.com/roshanLambdatest/roshan_testScript'
@@ -25,7 +25,7 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
+        stage('Tests') {
             steps {
                 sh 'mvn clean test'
             }
