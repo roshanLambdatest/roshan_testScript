@@ -19,29 +19,29 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class GFGLoginTest1 {
     private WebDriver driver;
 
-    // Hardcoded LambdaTest Credentials (⚠ Not Recommended)
     private final String username = "roshank";  
     private final String accessKey = "LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm";
-
     private final String gridURL = "https://" + username + ":" + accessKey + "@hub.lambdatest.com/wd/hub";
 
-    // Login credentials for GeeksforGeeks
     private final String email = "roshankumar86788@gmail.com";
     private final String password = "Rk@9451176004";
 
     @BeforeEach
     public void setUp() throws MalformedURLException {
-        WebDriverManager.chromedriver().setup(); // Ensures driver is available
+        WebDriverManager.chromedriver().setup();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability("browserName", "Chrome");
-capabilities.setCapability("browserVersion", "dev");
-HashMap<String, Object> ltOptions = new HashMap<String, Object>();
-ltOptions.put("username", "roshank");
-ltOptions.put("accessKey", "LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm");
-ltOptions.put("platformName", "Windows 10");
-ltOptions.put("project", "Untitled");
-capabilities.setCapability("LT:Options", ltOptions);
+        capabilities.setCapability("browserName", "Chrome");
+        capabilities.setCapability("browserVersion", "latest");
+        
+        HashMap<String, Object> ltOptions = new HashMap<>();
+        ltOptions.put("username", username);
+        ltOptions.put("accessKey", accessKey);
+        ltOptions.put("platformName", "Windows 10");
+        ltOptions.put("project", "Untitled");
+        ltOptions.put("tunnel", true); // Enable LambdaTest Tunnel
+        
+        capabilities.setCapability("LT:Options", ltOptions);
 
         driver = new RemoteWebDriver(new URL(gridURL), capabilities);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -73,8 +73,3 @@ capabilities.setCapability("LT:Options", ltOptions);
         }
     }
 }
-
-
-
-
-
