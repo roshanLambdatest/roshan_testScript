@@ -9,56 +9,75 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <selenium.version>4.10.0</selenium.version>
-        <webdrivermanager.version>5.5.3</webdrivermanager.version>
-        <junit.version>5.9.3</junit.version>
-    </properties>
-
     <dependencies>
-        <!-- Selenium Java -->
+        <!-- Selenium Java Dependency -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>${selenium.version}</version>
+            <version>4.10.0</version>
         </dependency>
 
         <!-- WebDriver Manager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>${webdrivermanager.version}</version>
+            <version>5.5.3</version>
         </dependency>
 
         <!-- JUnit 5 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>${junit.version}</version>
+            <version>5.9.3</version>
+        </dependency>
+
+        <!-- TestNG for alternative testing -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.7.1</version>
             <scope>test</scope>
         </dependency>
 
-        <!-- LambdaTest Tunnel -->
-        <dependency>
-            <groupId>com.github.lambdatest</groupId>
-            <artifactId>lambdatest-tunnel-binary</artifactId>
-            <version>4.0.1</version>
-        </dependency>
-
-        <!-- Basic Logging -->
+        <!-- SLF4J Logging -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>2.0.7</version>
         </dependency>
+
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>1.4.5</version>
-            <scope>test</scope>
+        </dependency>
+
+        <!-- Apache Commons Lang (for String Utils) -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+
+        <!-- Jackson Databind (for JSON handling in reports) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+
+        <!-- Extent Reports for test reporting -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.0.9</version>
+        </dependency>
+
+        <!-- Allure Reports (for better test visualization) -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>2.21.0</version>
         </dependency>
     </dependencies>
 
@@ -69,25 +88,46 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
             </plugin>
 
-            <!-- Surefire Plugin for JUnit 5 -->
+            <!-- Maven Surefire Plugin for Unit Tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
+                <version>3.0.0-M7</version>
                 <configuration>
                     <includes>
-                        <include>**/*GFGLoginTest*.java</include>
+                        <include>**/GFGLoginTest*.java</include>
                     </includes>
+                    <parallel>classes</parallel>
+                    <threadCount>3</threadCount>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.junit.jupiter</groupId>
-                        <artifactId>junit-jupiter-engine</artifactId>
-                        <version>${junit.version}</version>
-                    </dependency>
-                </dependencies>
+            </plugin>
+
+            <!-- Maven Failsafe Plugin for Integration Tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>3.0.0-M7</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Allure Report Plugin -->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
             </plugin>
         </plugins>
     </build>

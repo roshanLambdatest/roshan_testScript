@@ -29,7 +29,6 @@ public class GFGLoginTest {
     private final String email = "roshankumar86788@gmail.com";
     private final String password = "Rk@9451176004";
 
-    
     @BeforeEach
     public void setUp() throws MalformedURLException {
         WebDriverManager.chromedriver().setup(); // Ensures driver is available
@@ -49,19 +48,19 @@ capabilities.setCapability("LT:Options", ltOptions);
     }
     @Test
     public void testLogin() throws InterruptedException {
-        driver.get("http://localhost:8080/login");
+        driver.get("https://auth.geeksforgeeks.org/");
 
-        // WebElement emailField = driver.findElement(By.id("luser"));
-        // emailField.sendKeys(email);
+        WebElement emailField = driver.findElement(By.id("luser"));
+        emailField.sendKeys(email);
 
-        // WebElement passwordField = driver.findElement(By.id("password"));
-        // passwordField.sendKeys(password);
+        WebElement passwordField = driver.findElement(By.id("password"));
+        passwordField.sendKeys(password);
 
-        // WebElement loginButton = driver.findElement(By.xpath("//button[text()='Sign In']"));
-        // loginButton.click();
+        WebElement loginButton = driver.findElement(By.xpath("//button[text()='Sign In']"));
+        loginButton.click();
 
-        // Thread.sleep(5000);
-        // assertTrue(driver.getTitle().contains("GeeksforGeeks"));
+        Thread.sleep(5000);
+        assertTrue(driver.getTitle().contains("GeeksforGeeks"));
 
         System.out.println("Login Successful on LambdaTest!");
     }
@@ -74,75 +73,7 @@ capabilities.setCapability("LT:Options", ltOptions);
     }
 }
 
-// //test
+//test
 
 
-// package hyperexecute;
 
-// import org.openqa.selenium.By;
-// import org.openqa.selenium.WebDriver;
-// import org.openqa.selenium.WebElement;
-// import org.openqa.selenium.remote.RemoteWebDriver;
-// import org.openqa.selenium.remote.DesiredCapabilities;
-// import org.junit.jupiter.api.AfterEach;
-// import org.junit.jupiter.api.BeforeEach;
-// import org.junit.jupiter.api.Test;
-// import io.github.bonigarcia.wdm.WebDriverManager;
-// import java.net.URL;
-// import java.net.MalformedURLException;
-// import java.time.Duration;
-// import java.util.HashMap;
-
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-
-// public class GFGLoginTest {
-//     private WebDriver driver;
-
-//     // LambdaTest Credentials (Consider using environment variables)
-//     private final String username = "roshank";  
-//     private final String accessKey = "LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm";
-//     private final String gridURL = "https://" + username + ":" + accessKey + "@hub.lambdatest.com/wd/hub";
-//     private final String tunnelName = "JenkinsTestTunnel";
-//     @BeforeEach
-//     public void setUp() throws MalformedURLException {
-//         WebDriverManager.chromedriver().setup();
-
-//         DesiredCapabilities capabilities = new DesiredCapabilities();
-//         capabilities.setCapability("browserName", "Chrome");
-//         capabilities.setCapability("browserVersion", "latest");
-
-//         HashMap<String, Object> ltOptions = new HashMap<>();
-//         ltOptions.put("username", username);
-//         ltOptions.put("accessKey", accessKey);
-//         ltOptions.put("platformName", "Windows 10");
-//         ltOptions.put("project", "JenkinsLoginTest");
-
-//         ltOptions.put("tunnel", true); // Enable tunnel
-//         ltOptions.put("tunnelName", tunnelName); // Set tunnel name
-//         ltOptions.put("selenium_version", "4.0.1"); // Recommended for tunnel
-
-//         capabilities.setCapability("LT:Options", ltOptions);
-
-//         driver = new RemoteWebDriver(new URL(gridURL), capabilities);
-//         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//     }
-
-//     @Test
-//     public void testJenkinsLoginPageTitle() {
-//         driver.get("http://localhost:8080/login");
-
-//         // Verify title
-//         String expectedTitle = "Sign in to Jenkins";
-//         String actualTitle = driver.getTitle();
-//         assertEquals(expectedTitle, actualTitle, "Jenkins login page title does not match!");
-
-//         System.out.println("Title verification successful: " + actualTitle);
-//     }
-
-//     @AfterEach
-//     public void tearDown() {
-//         if (driver != null) {
-//             driver.quit();
-//         }
-//     }
-// }
