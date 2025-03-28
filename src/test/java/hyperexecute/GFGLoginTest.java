@@ -1,3 +1,82 @@
+// package hyperexecute;
+
+// import org.openqa.selenium.By;
+// import org.openqa.selenium.WebDriver;
+// import org.openqa.selenium.WebElement;
+// import org.openqa.selenium.remote.RemoteWebDriver;
+// import org.openqa.selenium.remote.DesiredCapabilities;
+// import org.junit.jupiter.api.AfterEach;
+// import org.junit.jupiter.api.BeforeEach;
+// import org.junit.jupiter.api.Test;
+// import io.github.bonigarcia.wdm.WebDriverManager;
+// import java.net.URL;
+// import java.net.MalformedURLException;
+// import java.time.Duration;
+// import java.util.HashMap;
+
+// import static org.junit.jupiter.api.Assertions.assertTrue;
+
+// public class GFGLoginTest {
+//     private WebDriver driver;
+
+//     // Hardcoded LambdaTest Credentials (⚠ Not Recommended)
+//     private final String username = "roshank";  
+//     private final String accessKey = "LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm";
+
+//     private final String gridURL = "https://" + username + ":" + accessKey + "@hub.lambdatest.com/wd/hub";
+
+//     // Login credentials for GeeksforGeeks
+//     private final String email = "roshankumar86788@gmail.com";
+//     private final String password = "Rk@9451176004";
+
+    
+//     @BeforeEach
+//     public void setUp() throws MalformedURLException {
+//         WebDriverManager.chromedriver().setup(); // Ensures driver is available
+
+//         DesiredCapabilities capabilities = new DesiredCapabilities();
+// capabilities.setCapability("browserName", "Chrome");
+// capabilities.setCapability("browserVersion", "dev");
+// HashMap<String, Object> ltOptions = new HashMap<String, Object>();
+// ltOptions.put("username", "roshank");
+// ltOptions.put("accessKey", "LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm");
+// ltOptions.put("platformName", "Windows 10");
+// ltOptions.put("project", "Untitled");
+// capabilities.setCapability("LT:Options", ltOptions);
+
+//         driver = new RemoteWebDriver(new URL(gridURL), capabilities);
+//         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//     }
+//     @Test
+//     public void testLogin() throws InterruptedException {
+//         driver.get("https://auth.geeksforgeeks.org/");
+
+//         WebElement emailField = driver.findElement(By.id("luser"));
+//         emailField.sendKeys(email);
+
+//         WebElement passwordField = driver.findElement(By.id("password"));
+//         passwordField.sendKeys(password);
+
+//         WebElement loginButton = driver.findElement(By.xpath("//button[text()='Sign In']"));
+//         loginButton.click();
+
+//         Thread.sleep(5000);
+//         assertTrue(driver.getTitle().contains("GeeksforGeeks"));
+
+//         System.out.println("Login Successful on LambdaTest!");
+//     }
+
+//     @AfterEach
+//     public void tearDown() {
+//         if (driver != null) {
+//             driver.quit();
+//         }
+//     }
+// }
+
+// //test
+
+
 package hyperexecute;
 
 import org.openqa.selenium.By;
@@ -14,55 +93,46 @@ import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.HashMap;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GFGLoginTest {
     private WebDriver driver;
 
-    // Hardcoded LambdaTest Credentials (⚠ Not Recommended)
+    // LambdaTest Credentials (Consider using environment variables)
     private final String username = "roshank";  
     private final String accessKey = "LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm";
-
     private final String gridURL = "https://" + username + ":" + accessKey + "@hub.lambdatest.com/wd/hub";
-
-    // Login credentials for GeeksforGeeks
-    private final String email = "roshankumar86788@gmail.com";
-    private final String password = "Rk@9451176004";
 
     @BeforeEach
     public void setUp() throws MalformedURLException {
-        WebDriverManager.chromedriver().setup(); // Ensures driver is available
+        WebDriverManager.chromedriver().setup();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability("browserName", "Chrome");
-capabilities.setCapability("browserVersion", "dev");
-HashMap<String, Object> ltOptions = new HashMap<String, Object>();
-ltOptions.put("username", "roshank");
-ltOptions.put("accessKey", "LT_0uuZ6lYn8sxQ55aGYiXLDG3lwakfEsccxuWBBfm4EeMb4Wm");
-ltOptions.put("platformName", "Windows 10");
-ltOptions.put("project", "Untitled");
-capabilities.setCapability("LT:Options", ltOptions);
+        capabilities.setCapability("browserName", "Chrome");
+        capabilities.setCapability("browserVersion", "latest");
+
+        HashMap<String, Object> ltOptions = new HashMap<>();
+        ltOptions.put("username", username);
+        ltOptions.put("accessKey", accessKey);
+        ltOptions.put("platformName", "Windows 10");
+        ltOptions.put("project", "JenkinsLoginTest");
+
+        capabilities.setCapability("LT:Options", ltOptions);
 
         driver = new RemoteWebDriver(new URL(gridURL), capabilities);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
+
     @Test
-    public void testLogin() throws InterruptedException {
-        driver.get("https://auth.geeksforgeeks.org/");
+    public void testJenkinsLoginPageTitle() {
+        driver.get("http://localhost:8080/login");
 
-        WebElement emailField = driver.findElement(By.id("luser"));
-        emailField.sendKeys(email);
+        // Verify title
+        String expectedTitle = "Sign in to Jenkins";
+        String actualTitle = driver.getTitle();
+        assertEquals(expectedTitle, actualTitle, "Jenkins login page title does not match!");
 
-        WebElement passwordField = driver.findElement(By.id("password"));
-        passwordField.sendKeys(password);
-
-        WebElement loginButton = driver.findElement(By.xpath("//button[text()='Sign In']"));
-        loginButton.click();
-
-        Thread.sleep(5000);
-        assertTrue(driver.getTitle().contains("GeeksforGeeks"));
-
-        System.out.println("Login Successful on LambdaTest!");
+        System.out.println("Title verification successful: " + actualTitle);
     }
 
     @AfterEach
@@ -72,8 +142,3 @@ capabilities.setCapability("LT:Options", ltOptions);
         }
     }
 }
-
-//test
-
-
-
