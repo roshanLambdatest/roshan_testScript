@@ -1,54 +1,30 @@
-name: CI/CD with LambdaTest Tunnel
-
+name: Run TestNG Tests
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
-      - main
-
+      - master
+    paths:
+      - 'src/test/java/**'
+  workflow_dispatch:  # Enables manual triggering
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Set up JDK 11
+        uses: actions/setup-java@v3
         with:
-          node-version: 18
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Start LambdaTest Tunnel
-        env:
-          LT_USERNAME: ${{ secrets.LT_USERNAME }}
-          LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
-        run: |
-          echo "Downloading LambdaTest Tunnel..."
-          wget https://downloads.lambdatest.com/tunnel/v3/linux/lambdatest-tunnel.zip
-          unzip lambdatest-tunnel.zip
-          chmod +x LT
-          
-          echo "Starting LambdaTest Tunnel..."
-          nohup ./LT -user $LT_USERNAME -key $LT_ACCESS_KEY -tunnelName github-tunnel > lt.log 2>&1 &
-          sleep 15  # Wait for tunnel to establish
-
-          echo "Checking LambdaTest Tunnel Logs:"
-          cat lt.log
-
-      - name: Verify LambdaTest Tunnel Connection
-        run: netstat -tlnp | grep -E "LT|3000" || echo "Localhost or tunnel is not accessible"
-
-      - name: Run Selenium Tests on LambdaTest
-        env:
-          LT_USERNAME: ${{ secrets.LT_USERNAME }}
-          LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
-          LT_TUNNEL_NAME: "github-tunnel"
-
-        run: mvn test
-
+          distribution: 'temurin'
+          java-version: '11'
+      - name: Cache Maven Dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2
+          key: maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            maven-
+      - name: Install Maven
+        run: sudo apt-get install -y maven
+      - name: Run Tests
+        run: mvn test -D suite=pom.xml
