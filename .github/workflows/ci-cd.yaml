@@ -43,7 +43,7 @@ jobs:
 
           echo $LT_USERNAME
           echo $LT_ACCESS_KEY
-          unzip lambdatest-tunnel.zip
+          unzip LT_Linux.zip
           chmod +x LT
           nohup ./LT -user $LT_USERNAME -key $LT_ACCESS_KEY -tunnelName github-tunnel > lt.log 2>&1 &
           sleep 20  # Ensure tunnel is established before running tests
