@@ -49,4 +49,8 @@ jobs:
           LT_USERNAME: ${{ secrets.LT_USERNAME }}
           LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
           LT_TUNNEL_NAME: "github-tunnel"
+<<<<<<< HEAD
         run: node test.js
+=======
+        run: mvn test
+>>>>>>> f02a798 (added github actions)
