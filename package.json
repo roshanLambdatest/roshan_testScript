@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@lambdatest/node-tunnel": "^4.0.9"
+  }
+}
