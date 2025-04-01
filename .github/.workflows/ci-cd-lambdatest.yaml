@@ -1,4 +1,4 @@
-name: Run TestNG Tests
+name: Run JUnit Tests
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - master
     paths:
       - 'src/test/java/**'
-  workflow_dispatch:  # Enables manual triggering
+  workflow_dispatch:
 
 jobs:
   test:
@@ -40,12 +40,19 @@ jobs:
         run: |
           wget https://downloads.lambdatest.com/tunnel/v3/linux/lambdatest-tunnel.zip
           unzip lambdatest-tunnel.zip
-          ./LT -user $LT_USERNAME -key $LT_ACCESS_KEY -tunnelName github-tunnel &
-          sleep 15  # Ensure tunnel is established before running tests
+          chmod +x LT
+          nohup ./LT -user $LT_USERNAME -key $LT_ACCESS_KEY -tunnelName github-tunnel > lt.log 2>&1 &
+          sleep 20  # Ensure tunnel is established before running tests
 
-      - name: Run Tests on LambdaTest
+      - name: Check Tunnel Logs
+        run: cat lt.log || echo "Tunnel log not found"
+
+      - name: Verify LambdaTest Tunnel Connection
+        run: curl -Is http://localhost:3000 || echo "Localhost is not accessible"
+
+      - name: Run JUnit Tests on LambdaTest
         env:
           LT_USERNAME: ${{ secrets.LT_USERNAME }}
           LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
           LT_TUNNEL_NAME: "github-tunnel"
-        run: mvn test -DsuiteXmlFile=pom.xml
+        run: mvn test -Dtest=GFGLoginTest -Dwebdriver.remote.url="https://${LT_USERNAME}:${LT_ACCESS_KEY}@hub.lambdatest.com/wd/hub"
