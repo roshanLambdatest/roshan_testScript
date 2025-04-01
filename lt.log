@@ -79,3 +79,133 @@
 {"level":"error","time":"2025-03-28T18:12:50.178+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
 {"level":"error","time":"2025-03-28T18:12:50.179+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
 {"level":"info","time":"2025-03-28T18:12:50.179+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T18:18:45.231+0530","caller":"cmd/lt.go:207","msg":"LambdaTest Tunnel version: 3.2.13"}
+{"level":"warn","time":"2025-03-28T18:18:45.996+0530","caller":"custom/setup.go:846","msg":"Port 9090 is already in use. Trying on a random free tcp port."}
+{"level":"info","time":"2025-03-28T18:18:45.998+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :57065"}
+{"level":"info","time":"2025-03-28T18:18:47.583+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T18:18:50.182+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T18:18:50.182+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T18:18:50.182+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T18:19:01.252+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :57065"}
+{"level":"info","time":"2025-03-28T18:19:02.266+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T18:19:04.185+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T18:19:04.186+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T18:19:04.186+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T18:19:25.778+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :57065"}
+{"level":"info","time":"2025-03-28T18:19:26.750+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T18:19:28.219+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T18:19:28.219+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T18:19:28.219+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T18:20:08.818+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :57065"}
+{"level":"info","time":"2025-03-28T18:20:10.050+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T18:20:11.591+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T18:20:11.592+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T18:20:11.592+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T18:51:30.981+0530","caller":"cmd/lt.go:207","msg":"LambdaTest Tunnel version: 3.2.13"}
+{"level":"warn","time":"2025-03-28T18:51:32.008+0530","caller":"custom/setup.go:846","msg":"Port 9090 is already in use. Trying on a random free tcp port."}
+{"level":"info","time":"2025-03-28T18:51:32.009+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :57415"}
+{"level":"info","time":"2025-03-28T18:51:33.627+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T18:51:35.742+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T18:51:35.742+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T18:51:35.742+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T18:51:46.277+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :57415"}
+{"level":"info","time":"2025-03-28T18:51:47.245+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T18:51:48.763+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T18:51:48.764+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T18:51:48.764+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T18:52:09.894+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :57415"}
+{"level":"info","time":"2025-03-28T18:52:10.882+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T18:52:12.357+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T18:52:12.357+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T18:52:12.357+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T18:52:52.379+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :57415"}
+{"level":"info","time":"2025-03-28T18:52:53.372+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T18:52:54.896+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T18:52:54.896+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T18:52:54.897+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T18:54:35.009+0530","caller":"cmd/lt.go:207","msg":"LambdaTest Tunnel version: 3.2.13"}
+{"level":"warn","time":"2025-03-28T18:54:36.036+0530","caller":"custom/setup.go:846","msg":"Port 9090 is already in use. Trying on a random free tcp port."}
+{"level":"info","time":"2025-03-28T18:54:36.038+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :57626"}
+{"level":"info","time":"2025-03-28T18:54:37.566+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T18:54:39.753+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T18:54:39.753+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T18:54:39.753+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T18:54:51.077+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :57626"}
+{"level":"info","time":"2025-03-28T18:54:51.985+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T18:54:53.880+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T18:54:53.880+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T18:54:53.880+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T18:55:14.549+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :57626"}
+{"level":"info","time":"2025-03-28T18:55:15.519+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T18:55:17.431+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T18:55:17.431+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T18:55:17.431+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T19:17:47.980+0530","caller":"cmd/lt.go:207","msg":"LambdaTest Tunnel version: 3.2.13"}
+{"level":"info","time":"2025-03-28T19:17:49.098+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :9090"}
+{"level":"info","time":"2025-03-28T19:17:51.370+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"info","time":"2025-03-28T19:17:55.901+0530","caller":"core/lifecycle.go:430","msg":"You can start testing now"}
+{"level":"info","time":"2025-03-28T19:17:55.901+0530","caller":"core/lifecycle.go:431","msg":"Tunnel ID: 5129089"}
+{"level":"info","time":"2025-03-28T19:19:07.918+0530","caller":"cmd/lt.go:207","msg":"LambdaTest Tunnel version: 3.2.13"}
+{"level":"warn","time":"2025-03-28T19:19:08.785+0530","caller":"custom/setup.go:846","msg":"Port 9090 is already in use. Trying on a random free tcp port."}
+{"level":"info","time":"2025-03-28T19:19:08.787+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :58226"}
+{"level":"info","time":"2025-03-28T19:19:10.332+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T19:19:12.988+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T19:19:12.989+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T19:19:12.989+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T19:19:24.044+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :58226"}
+{"level":"info","time":"2025-03-28T19:19:25.007+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T19:19:26.496+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T19:19:26.496+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T19:19:26.496+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T19:19:48.031+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :58226"}
+{"level":"info","time":"2025-03-28T19:19:48.946+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T19:19:50.436+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T19:19:50.436+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T19:19:50.437+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T19:32:28.766+0530","caller":"cmd/lt.go:207","msg":"LambdaTest Tunnel version: 3.2.13"}
+{"level":"info","time":"2025-03-28T19:32:29.837+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :9090"}
+{"level":"info","time":"2025-03-28T19:32:31.869+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"info","time":"2025-03-28T19:32:36.338+0530","caller":"core/lifecycle.go:430","msg":"You can start testing now"}
+{"level":"info","time":"2025-03-28T19:32:36.338+0530","caller":"core/lifecycle.go:431","msg":"Tunnel ID: 5129282"}
+{"level":"info","time":"2025-03-28T19:48:47.713+0530","caller":"cmd/lt.go:207","msg":"LambdaTest Tunnel version: 3.2.13"}
+{"level":"warn","time":"2025-03-28T19:48:49.555+0530","caller":"custom/setup.go:846","msg":"Port 9090 is already in use. Trying on a random free tcp port."}
+{"level":"info","time":"2025-03-28T19:48:49.557+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :58968"}
+{"level":"info","time":"2025-03-28T19:48:51.231+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T19:48:53.573+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T19:48:53.573+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T19:48:53.573+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T19:49:03.948+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :58968"}
+{"level":"info","time":"2025-03-28T19:49:04.906+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T19:49:06.385+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T19:49:06.385+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T19:49:06.385+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-03-28T19:49:27.624+0530","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :58968"}
+{"level":"info","time":"2025-03-28T19:49:28.588+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-03-28T19:49:30.143+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-03-28T19:49:30.143+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-03-28T19:49:30.143+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-04-01T14:29:26.921+0530","caller":"cmd/lt.go:207","msg":"LambdaTest Tunnel version: 3.2.13"}
+{"level":"info","time":"2025-04-01T14:29:27.740+0530","caller":"core/lifecycle.go:96","msg":"New update available for the tunnel client. Downloading update"}
+{"level":"info","time":"2025-04-01T14:29:34.680+0530","caller":"core/lifecycle.go:104","msg":"Update successfully installed. Restarting the binary"}
+{"level":"info","time":"2025-04-01T14:29:36.094+0530","caller":"cmd/lt.go:207","msg":"LambdaTest Tunnel version: 3.2.14"}
+{"level":"info","time":"2025-04-01T14:29:36.942+0530","caller":"custom/setup.go:867","msg":"Tunnel binary started on port :9090"}
+{"level":"info","time":"2025-04-01T14:29:39.886+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"info","time":"2025-04-01T14:29:43.922+0530","caller":"core/lifecycle.go:430","msg":"You can start testing now"}
+{"level":"info","time":"2025-04-01T14:29:43.922+0530","caller":"core/lifecycle.go:431","msg":"Tunnel ID: 5181237"}
+{"level":"info","time":"2025-04-01T14:40:00.742+0530","caller":"cmd/lt.go:207","msg":"LambdaTest Tunnel version: 3.2.14"}
+{"level":"warn","time":"2025-04-01T14:40:01.905+0530","caller":"custom/setup.go:852","msg":"Port 9090 is already in use. Trying on a random free tcp port."}
+{"level":"info","time":"2025-04-01T14:40:01.907+0530","caller":"custom/setup.go:867","msg":"Tunnel binary started on port :52051"}
+{"level":"info","time":"2025-04-01T14:40:04.154+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-04-01T14:40:06.854+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-04-01T14:40:06.855+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-04-01T14:40:06.855+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-04-01T14:40:17.823+0530","caller":"custom/setup.go:867","msg":"Tunnel binary started on port :52051"}
+{"level":"info","time":"2025-04-01T14:40:18.866+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-04-01T14:40:20.451+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-04-01T14:40:20.452+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-04-01T14:40:20.452+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
+{"level":"info","time":"2025-04-01T14:40:41.538+0530","caller":"custom/setup.go:867","msg":"Tunnel binary started on port :52051"}
+{"level":"info","time":"2025-04-01T14:40:42.566+0530","caller":"core/lifecycle.go:308","msg":"Launching tunnel"}
+{"level":"error","time":"2025-04-01T14:40:44.055+0530","caller":"tunnelmanager/controller.go:117","msg":"conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com"}
+{"level":"error","time":"2025-04-01T14:40:44.056+0530","caller":"core/lifecycle.go:311","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: MavenSingle is already running for user roshank@lambdatest.com "}
+{"level":"info","time":"2025-04-01T14:40:44.056+0530","caller":"cmd/lt.go:237","msg":"Tunnel aborted, starting new tunnel."}
