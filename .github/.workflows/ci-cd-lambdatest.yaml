@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -32,19 +32,20 @@ jobs:
           wget https://downloads.lambdatest.com/tunnel/v3/linux/lambdatest-tunnel.zip
           unzip lambdatest-tunnel.zip
           ./LT -user $LT_USERNAME -key $LT_ACCESS_KEY -tunnelName github-tunnel &
+          sleep 15  # Increased wait time to ensure tunnel is established
 
-      - name: Wait for Tunnel to Establish
-        run: sleep 10
+      - name: Verify LambdaTest Tunnel Connection
+        run: curl -Is http://localhost:3000 || echo "Localhost is not accessible"
 
-      - name: Run Tests on LambdaTest
+      - name: Run Selenium Tests on LambdaTest
         env:
           LT_USERNAME: ${{ secrets.LT_USERNAME }}
           LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
           LT_TUNNEL_NAME: "github-tunnel"
-        run: npm test
+        run: node test.js
 
   deploy:
-    needs: build
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
