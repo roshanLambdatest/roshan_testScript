@@ -37,9 +37,11 @@ jobs:
         env:
           LT_USERNAME: ${{ secrets.LT_USERNAME }}
           LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
+
         run: |
           curl -O https://downloads.lambdatest.com/tunnel/v3/linux/lambdatest-tunnel.zip
-
+          echo $LT_USERNAME
+          echo $LT_ACCESS_KEY
           unzip lambdatest-tunnel.zip
           chmod +x LT
           nohup ./LT -user $LT_USERNAME -key $LT_ACCESS_KEY -tunnelName github-tunnel > lt.log 2>&1 &
