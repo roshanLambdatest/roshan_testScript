@@ -39,7 +39,14 @@ jobs:
           LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
 
         run: |
-          curl -u "$LT_USERNAME:$LT_ACCESS_KEY" -O https://downloads.lambdatest.com/tunnel/v3/linux/lambdatest-tunnel.zip
+          curl -u "$LT_USERNAME:$LT_ACCESS_KEY" -O https://downloads.lambdatest.com/tunnel/v3/linux/64bit/LT_Linux.zip
+
+
+
+
+NEW
+
+
 
 
           echo $LT_USERNAME
